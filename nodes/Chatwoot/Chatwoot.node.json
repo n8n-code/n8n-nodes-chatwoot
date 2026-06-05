@@ -1,0 +1,20 @@
+{
+  "node": "N8nDevChatwoot",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": [
+    "Development"
+  ],
+  "resources": {
+    "primaryDocumentation": [
+      {
+        "url": "https://github.com/kelvinzer0/n8n-nodes-chatwoot"
+      }
+    ],
+    "credentialDocumentation": [
+      {
+        "url": "https://github.com/kelvinzer0/n8n-nodes-chatwoot?tab=readme-ov-file#credentials"
+      }
+    ]
+  }
+}
