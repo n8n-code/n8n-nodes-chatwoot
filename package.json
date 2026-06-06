@@ -1,6 +1,6 @@
 {
   "name": "@n8n-dev/n8n-nodes-chatwoot",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Chatwoot customer engagement platform",
   "license": "MIT",
   "homepage": "",
