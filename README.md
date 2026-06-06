@@ -9,7 +9,7 @@
 
 Every time you connect n8n to chatwoot, you waste hours mapping endpoints, defining parameters, and debugging schemas. You copy-paste from docs, fix edge cases, and pray nothing breaks.
 
-**What if your n8n node just... worked?**
+**What if connecting n8n to chatwoot took 5 minutes, not half a day?**
 
 This node gives you **32+ resources** out of the box: **Accounts**, **Account Users**, **Agent Bots**, **Users**, **Inbox API**, and 27 more: with full CRUD operations, typed parameters, and zero manual configuration.
 
@@ -17,8 +17,8 @@ This node gives you **32+ resources** out of the box: **Accounts**, **Account Us
 
 ## What You Get
 
-- **32+ resources**: **Accounts**, **Account Users**, **Agent Bots**, **Users**, **Inbox API**, and 27 more
-- **Full CRUD**: Create, Read, Update, Delete operations for every resource
+- **Zero boilerplate**: Resources, operations, and fields are pre-configured and ready to use
+- **Full CRUD**: Create, read, update, and delete support where the API allows it
 - **Typed parameters**: No more guessing field types
 - **Built-in auth**: API key authentication, ready to go
 - **Declarative**: Native n8n performance, no custom execute() overhead
@@ -104,9 +104,9 @@ That's it. No configuration files. No code. It just works.
 ---
 
 ## Auto-Generated
-
 This node was auto-generated from the official **chatwoot** OpenAPI specification using
-[@n8n-dev/n8n-openapi-node-ultimate](https://github.com/kelvinzer0/n8n-openapi-node-ultimate).
+[@n8n-dev/n8n-openapi-node-ultimate](https://github.com/kelvinzer0/n8n-openapi-node-ultimate),
+then validated against the live API so you get accurate types and real parameters, not guesswork.
 
 When the chatwoot API updates, this node updates too.
 
@@ -114,9 +114,7 @@ When the chatwoot API updates, this node updates too.
 
 ## Support This Project
 
-This node was built by one developer who wanted to make n8n + OpenAPI effortless for everyone.
-
-Your donation funds new features, more API support, and better tooling for every developer after you.
+If this node saved you hours of work, consider supporting continued development, new APIs, better error handling, and faster updates.
 
 [![Keep It Moving.](https://crypto-donate.insidexofficial.workers.dev/eyJ0aXRsZSI6IktlZXAgSXQgTW92aW5nIiwiZGVzYyI6Ik9uZSBkZXZlbG9wZXIgYnVpbHQgYSB0b29sIHRoYXQgYXV0by1nZW5lcmF0ZXNcbm44biBub2RlcyBmcm9tIGFueSBPcGVuQVBJIHNwZWMuXG5cbllvdXIgZG9uYXRpb24gZnVuZHMgbmV3IGZlYXR1cmVzLCBtb3JlIEFQSSBzdXBwb3J0LFxuYW5kIGJldHRlciB0b29saW5nIGZvciBldmVyeSBkZXZlbG9wZXIgYWZ0ZXIgeW91LiIsInRhcmdldCI6NTAwMCwiYWRkcmVzc2VzIjp7ImV0aGVyZXVtIjoiMHhmMDU1NWQ0MGRiRkI0ZTNCZjA3MDQ0MjgyQjc4RjJmRTFmNTFFZjcyIiwic29sYW5hIjoiNlpEVk5BYmpZZExEcXo4cGt3VUNHYllaNVV3QlFranB0QzU1Wk5vTFcybVUifSwiZGlzY29yZCI6Imh0dHBzOi8vZGlzY29yZC5nZy9wdERaOGU0aDkzIn0/badge)](https://n8n-code.github.io/membership/#/eyJ0aXRsZSI6IktlZXAgSXQgTW92aW5nIiwiZGVzYyI6Ik9uZSBkZXZlbG9wZXIgYnVpbHQgYSB0b29sIHRoYXQgYXV0by1nZW5lcmF0ZXNcbm44biBub2RlcyBmcm9tIGFueSBPcGVuQVBJIHNwZWMuXG5cbllvdXIgZG9uYXRpb24gZnVuZHMgbmV3IGZlYXR1cmVzLCBtb3JlIEFQSSBzdXBwb3J0LFxuYW5kIGJldHRlciB0b29saW5nIGZvciBldmVyeSBkZXZlbG9wZXIgYWZ0ZXIgeW91LiIsInRhcmdldCI6NTAwMCwiYWRkcmVzc2VzIjp7ImV0aGVyZXVtIjoiMHhmMDU1NWQ0MGRiRkI0ZTNCZjA3MDQ0MjgyQjc4RjJmRTFmNTFFZjcyIiwic29sYW5hIjoiNlpEVk5BYmpZZExEcXo4cGt3VUNHYllaNVV3QlFranB0QzU1Wk5vTFcybVUifSwiZGlzY29yZCI6Imh0dHBzOi8vZGlzY29yZC5nZy9wdERaOGU0aDkzIn0)
 
