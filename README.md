@@ -53,38 +53,37 @@ That's it. No configuration files. No code. It just works.
 
 | Resource | Operations |
 |----------|------------|
-| Accounts | Create An Account, Get Details Of An Account, Update An Account, Delete An Account |
-| Account Users | List All Account Users, Create An Account User, Delete An Account User |
-| Agent Bots | List All Agent Bots, Create An Agent Bot, Get Details Of A Single Agent Bot, Update An Agent Bot, Delete An Agent Bot |
-| Users | Create A User, Get Details Of A User, Update A User, Delete A User, Get Sso Url Of A User |
-| Inbox API | Get Details Of A Inbox |
-| Contacts | Contact List, Contact Create, Contact Details, Contact Update, Contact Delete, Contact Conversations, Contact Search, Contact Filter, Contact Inbox Creation, Contactable Inboxes Get, Contact Merge |
-| Contact Labels | List All Labels Of A Contact, Contact Add Labels |
-| Conversation Assignments | Assign A Conversation |
-| Conversation Labels | — |
-| Conversations | Conversation List Meta, Conversation List, New Conversation, Conversation Filter, Get Details Of A Conversation, Update Conversation, Toggle Status Of A Conversation, Toggle Priority Of A Conversation, Toggle Typing Status Of A Conversation, Update Custom Attributes Of A Conversation, List All Labels Of A Conversation, Conversation Add Labels, Get Conversation Reporting Events |
-| Custom Filters | List All Filters, Create A Custom Filter, Get Details Of A Single Custom Filter, Update A Custom Filter, Delete A Custom Filter |
-| Inboxes | List All Inboxes, Inbox Creation, Get Inbox, Update Inbox, Get Inbox Agent Bot, Update Agent Bot, Get Inbox Members, Add New Agent To Inbox, Update Agents In Inbox, Delete Agent In Inbox |
-| Integrations | Get Details Of All Integrations, Create An Integration Hook, Update An Integrations Hook, Delete An Integration Hook |
-| Labels | List All Labels, Create A Label, Get Details Of A Single Label, Update A Label, Delete A Label |
-| Messages | List All Messages, Create A New Message In A Conversation, Delete A Message |
-| Reports | Get Account Reporting Events, List All Conversation Statistics, List All Conversation Statistics Summary, Get Account Conversation Metrics, Get Agent Conversation Metrics, Get Channel Summary Report, Get Inbox Summary Report, Get Agent Summary Report, Get Team Summary Report, Get First Response Time Distribution, Get Inbox Label Matrix, Get Outgoing Messages Count |
-| Teams | List All Teams, Create A Team, Get Details Of A Single Team, Update A Team, Delete A Team, Get Team Members, Add New Agent To Team, Update Agents In Team, Delete Agent In Team |
-| Automation Rule | Get Account Automation Rule, Add New Automation Rule To Account, Get Details Of A Single Automation Rule, Update Automation Rule In Account, Delete Automation Rule From Account |
-| Help Center | Add New Portal To Account, Get Portal, Update Portal To Account, Add New Category To Account, Add New Article To Account |
-| Contacts API | Create A Contact, Get Details Of A Contact, Update A Contact |
-| Conversations API | Create A Conversation, List All Contact Conversations, Get Single Conversation, Resolve Conversation, Toggle Typing Status, Update Last Seen |
-| Messages API | Create A Message, List All Conversation Messages, Update A Message |
-| CSAT Survey Page | Get Csat Survey Page |
-| Account | Get Account Details, Update Account |
-| Audit Logs | Get Account Audit Logs |
-| Account Agent Bots | List All Account Agent Bots, Create An Account Agent Bot, Get Details Of A Single Account Agent Bot, Update An Account Agent Bot, Delete An Account Agent Bot |
-| Agents | Get Account Agents, Add New Agent To Account, Update Agent In Account, Delete Agent From Account |
-| Canned Responses | Get Account Canned Response, Add New Canned Response To Account, Update Canned Response In Account, Delete Canned Response From Account |
-| Custom Attributes | Get Account Custom Attribute, Add New Custom Attribute To Account, Get Details Of A Single Custom Attribute, Update Custom Attribute In Account, Delete Custom Attribute From Account |
-| Profile | Fetch Profile, Update Profile |
-| Webhooks | List All Webhooks, Create A Webhook, Update A Webhook, Delete A Webhook |
-| Conversation | Get Conversation Messages |
+| Accounts | Create an Account, Get an account details, Update an account, Delete an Account |
+| Account Users | List all Account Users, Create an Account User, Delete an Account User |
+| Agent Bots | List all AgentBots, Create an Agent Bot, Get an agent bot details, Update an agent bot, Delete an AgentBot |
+| Users | Create a User, Get an user details, Update a user, Delete a User, Get User SSO Link |
+| Inbox API | Inbox details |
+| Contacts | List Contacts, Create Contact, Show Contact, Update Contact, Delete Contact, Contact Conversations, Search Contacts, Contact Filter, Create contact inbox, Get Contactable Inboxes, Merge Contacts |
+| Contact Labels | List Labels, Add Labels |
+| Conversation Assignments | Assign Conversation |
+| Conversations | Get Conversation Counts, Conversations List, Create New Conversation, Conversations Filter, Conversation Details, Update Conversation, Toggle Status, Toggle Priority, Toggle Typing Status, Update Custom Attributes, List Labels, Add Labels, Conversation Reporting Events |
+| Custom Filters | List all custom filters, Create a custom filter, Get a custom filter details, Update a custom filter, Delete a custom filter |
+| Inboxes | List all inboxes, Create an inbox, Get an inbox, Update Inbox, Show Inbox Agent Bot, Add or remove agent bot, List Agents in Inbox, Add a New Agent, Update Agents in Inbox, Remove an Agent from Inbox |
+| Integrations | List all the Integrations, Create an integration hook, Update an Integration Hook, Delete an Integration Hook |
+| Labels | List all labels, Create a label, Get a label, Update a label, Delete a label |
+| Messages | Get messages, Create New Message, Delete a message |
+| Reports | Account Reporting Events, Get Account reports, Get Account reports summary, Account Conversation Metrics, Agent Conversation Metrics, Get conversation statistics grouped by channel type, Get conversation statistics grouped by inbox, Get conversation statistics grouped by agent, Get conversation statistics grouped by team, Get first response time distribution by channel, Get inbox-label matrix report, Get outgoing messages count grouped by entity |
+| Teams | List all teams, Create a team, Get a team details, Update a team, Delete a team, List Agents in Team, Add a New Agent, Update Agents in Team, Remove an Agent from Team |
+| Automation Rule | List all automation rules in an account, Add a new automation rule, Get a automation rule details, Update automation rule in Account, Remove a automation rule from account |
+| Help Center | Add a new portal, List all portals in an account, Update a portal, Add a new category, Add a new article |
+| Contacts API | Create a contact, Get a contact, Update a contact |
+| Conversations API | Create a conversation, List all conversations, Get a single conversation, Resolve a conversation, Toggle typing status, Update last seen |
+| Messages API | Create a message, List all messages, Update a message |
+| CSAT Survey Page | Get CSAT survey page |
+| Account | Get account details, Update account |
+| Audit Logs | List Audit Logs in Account |
+| Account Agent Bots | List all AgentBots, Create an Agent Bot, Get an agent bot details, Update an agent bot, Delete an AgentBot |
+| Agents | List Agents in Account, Add a New Agent, Update Agent in Account, Remove an Agent from Account |
+| Canned Responses | List all Canned Responses in an Account, Add a New Canned Response, Update Canned Response in Account, Remove a Canned Response from Account |
+| Custom Attributes | List all custom attributes in an account, Add a new custom attribute, Get a custom attribute details, Update custom attribute in Account, Remove a custom attribute from account |
+| Profile | Fetch user profile, Update user profile |
+| Webhooks | List all webhooks, Add a webhook, Update a webhook object, Delete a webhook |
+| Conversation | Get messages from a conversation |
 
 ---
 
