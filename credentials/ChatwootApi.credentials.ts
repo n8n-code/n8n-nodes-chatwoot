@@ -54,10 +54,13 @@ export class ChatwootApi implements ICredentialType {
 	};
 
 	test: ICredentialTestRequest = {
-		request: {
-			baseURL: '={{$credentials.url}}',
-			url: '/',
-			method: 'GET',
-		},
-	};
+			"request": {
+				"baseURL": "={{ $credentials.baseUrl }}",
+				"url": "/api/v1/profile",
+				"method": "GET",
+				"headers": {
+					"api_access_token": "={{ $credentials.userapikey }}"
+				}
+			}
+		};
 }
