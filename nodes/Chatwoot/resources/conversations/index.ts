@@ -337,6 +337,31 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Conversation List Meta"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /api/v1/accounts/{account_id}/conversations",
 			"name": "operation",
 			"type": "notice",
@@ -554,6 +579,31 @@ export const conversationsDescription: INodeProperties[] = [
 					"property": "page",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Conversation List"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -852,6 +902,56 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"New Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_agentbotapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token should be provided by system admin or obtained via rails console. This token can be used to build bot integrations and can only access limited apis.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"New Conversation"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/conversations/filter",
 			"name": "operation",
 			"type": "notice",
@@ -919,6 +1019,31 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Conversation Filter"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /api/v1/accounts/{account_id}/conversations/{conversation_id}",
 			"name": "operation",
 			"type": "notice",
@@ -926,6 +1051,31 @@ export const conversationsDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Get Details Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1029,6 +1179,56 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Update Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_agentbotapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token should be provided by system admin or obtained via rails console. This token can be used to build bot integrations and can only access limited apis.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Update Conversation"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/conversations/{conversation_id}/toggle_status",
 			"name": "operation",
 			"type": "notice",
@@ -1117,6 +1317,56 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Toggle Status Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_agentbotapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token should be provided by system admin or obtained via rails console. This token can be used to build bot integrations and can only access limited apis.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Toggle Status Of A Conversation"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/conversations/{conversation_id}/toggle_priority",
 			"name": "operation",
 			"type": "notice",
@@ -1170,6 +1420,56 @@ export const conversationsDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Toggle Priority Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Toggle Priority Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_agentbotapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token should be provided by system admin or obtained via rails console. This token can be used to build bot integrations and can only access limited apis.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1264,6 +1564,56 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Toggle Typing Status Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_agentbotapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token should be provided by system admin or obtained via rails console. This token can be used to build bot integrations and can only access limited apis.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Toggle Typing Status Of A Conversation"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/conversations/{conversation_id}/custom_attributes",
 			"name": "operation",
 			"type": "notice",
@@ -1309,6 +1659,31 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Update Custom Attributes Of A Conversation"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /api/v1/accounts/{account_id}/conversations/{conversation_id}/labels",
 			"name": "operation",
 			"type": "notice",
@@ -1316,6 +1691,31 @@ export const conversationsDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"List All Labels Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1373,6 +1773,31 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Conversation Add Labels"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /api/v1/accounts/{account_id}/conversations/{conversation_id}/reporting_events",
 			"name": "operation",
 			"type": "notice",
@@ -1380,6 +1805,31 @@ export const conversationsDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Get Conversation Reporting Events"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

@@ -85,6 +85,31 @@ export const agentsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Agents"
+					],
+					"operation": [
+						"Get Account Agents"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/agents",
 			"name": "operation",
 			"type": "notice",
@@ -256,6 +281,31 @@ export const agentsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Agents"
+					],
+					"operation": [
+						"Add New Agent To Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "PATCH /api/v1/accounts/{account_id}/agents/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -393,6 +443,31 @@ export const agentsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Agents"
+					],
+					"operation": [
+						"Update Agent In Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /api/v1/accounts/{account_id}/agents/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -418,6 +493,31 @@ export const agentsDescription: INodeProperties[] = [
 			"description": "The ID of the agent to be deleted.",
 			"default": 0,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Agents"
+					],
+					"operation": [
+						"Delete Agent From Account"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

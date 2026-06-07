@@ -222,6 +222,31 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_platformappapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by the system admin after creating a platformApp. This token should be used to provision agent bots, accounts, users and their roles.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Users"
+					],
+					"operation": [
+						"Create A User"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /platform/api/v1/users/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -229,6 +254,31 @@ export const usersDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Users"
+					],
+					"operation": [
+						"Get Details Of A User"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_platformappapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by the system admin after creating a platformApp. This token should be used to provision agent bots, accounts, users and their roles.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -385,6 +435,31 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_platformappapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by the system admin after creating a platformApp. This token should be used to provision agent bots, accounts, users and their roles.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Users"
+					],
+					"operation": [
+						"Update A User"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /platform/api/v1/users/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -404,6 +479,31 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_platformappapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by the system admin after creating a platformApp. This token should be used to provision agent bots, accounts, users and their roles.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Users"
+					],
+					"operation": [
+						"Delete A User"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /platform/api/v1/users/{id}/login",
 			"name": "operation",
 			"type": "notice",
@@ -411,6 +511,31 @@ export const usersDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Users"
+					],
+					"operation": [
+						"Get Sso Url Of A User"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_platformappapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by the system admin after creating a platformApp. This token should be used to provision agent bots, accounts, users and their roles.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

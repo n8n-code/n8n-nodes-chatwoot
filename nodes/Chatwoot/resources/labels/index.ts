@@ -97,6 +97,31 @@ export const labelsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Labels"
+					],
+					"operation": [
+						"List All Labels"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/labels",
 			"name": "operation",
 			"type": "notice",
@@ -216,6 +241,31 @@ export const labelsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Labels"
+					],
+					"operation": [
+						"Create A Label"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /api/v1/accounts/{account_id}/labels/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -223,6 +273,31 @@ export const labelsDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Labels"
+					],
+					"operation": [
+						"Get Details Of A Single Label"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -354,6 +429,31 @@ export const labelsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Labels"
+					],
+					"operation": [
+						"Update A Label"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /api/v1/accounts/{account_id}/labels/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -361,6 +461,31 @@ export const labelsDescription: INodeProperties[] = [
 				"theme": "info"
 			},
 			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Labels"
+					],
+					"operation": [
+						"Delete A Label"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

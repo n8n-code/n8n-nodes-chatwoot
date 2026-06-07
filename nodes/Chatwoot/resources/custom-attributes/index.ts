@@ -133,6 +133,31 @@ export const customAttributesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Custom Attributes"
+					],
+					"operation": [
+						"Get Account Custom Attribute"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /api/v1/accounts/{account_id}/custom_attribute_definitions",
 			"name": "operation",
 			"type": "notice",
@@ -352,6 +377,31 @@ export const customAttributesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Custom Attributes"
+					],
+					"operation": [
+						"Add New Custom Attribute To Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /api/v1/accounts/{account_id}/custom_attribute_definitions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -395,6 +445,31 @@ export const customAttributesDescription: INodeProperties[] = [
 			"description": "The ID of the custom attribute to be updated.",
 			"default": 0,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Custom Attributes"
+					],
+					"operation": [
+						"Get Details Of A Single Custom Attribute"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -644,6 +719,31 @@ export const customAttributesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Custom Attributes"
+					],
+					"operation": [
+						"Update Custom Attribute In Account"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /api/v1/accounts/{account_id}/custom_attribute_definitions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -687,6 +787,31 @@ export const customAttributesDescription: INodeProperties[] = [
 			"description": "The ID of the custom attribute to be deleted",
 			"default": 0,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Custom Attributes"
+					],
+					"operation": [
+						"Delete Custom Attribute From Account"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
