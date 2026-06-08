@@ -10,7 +10,7 @@ export class ChatwootApi implements ICredentialType {
 
 	displayName = 'chatwoot API';
 
-	icon: Icon = { light: 'file:../nodes/Chatwoot/chatwoot.svg', dark: 'file:../nodes/Chatwoot/chatwoot.dark.svg' };
+	icon: Icon = { light: 'file:../nodes/Chatwoot/chatwoot.png', dark: 'file:../nodes/Chatwoot/chatwoot.dark.png' };
 
 	documentationUrl = '';
 

@@ -35,7 +35,7 @@ export class Chatwoot implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'chatwoot',
 		name: 'N8nDevChatwoot',
-		icon: { light: 'file:./chatwoot.svg', dark: 'file:./chatwoot.dark.svg' },
+		icon: { light: 'file:./chatwoot.png', dark: 'file:./chatwoot.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
