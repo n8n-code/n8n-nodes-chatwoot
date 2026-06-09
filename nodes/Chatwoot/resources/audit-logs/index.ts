@@ -74,7 +74,7 @@ export const auditLogsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

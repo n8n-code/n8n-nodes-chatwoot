@@ -98,7 +98,7 @@ export const messagesApiDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Echo Id",
+			"displayName": "Echo ID",
 			"name": "echo_id",
 			"type": "string",
 			"default": "1234567890",

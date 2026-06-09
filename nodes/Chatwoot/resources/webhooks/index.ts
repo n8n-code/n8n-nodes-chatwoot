@@ -85,7 +85,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -129,7 +129,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -147,7 +147,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Url",
+			"displayName": "URL",
 			"name": "url",
 			"type": "string",
 			"default": "https://example.com/webhook",
@@ -222,7 +222,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -266,7 +266,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -284,7 +284,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Url",
+			"displayName": "URL",
 			"name": "url",
 			"type": "string",
 			"default": "https://example.com/webhook",
@@ -359,7 +359,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -403,7 +403,7 @@ export const webhooksDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

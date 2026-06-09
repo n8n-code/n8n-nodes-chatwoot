@@ -85,7 +85,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -129,7 +129,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -147,7 +147,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "App Id",
+			"displayName": "App ID",
 			"name": "app_id",
 			"type": "number",
 			"default": 1,
@@ -172,7 +172,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "number",
 			"default": 1,
@@ -247,7 +247,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -291,7 +291,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -309,7 +309,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Hook Id",
+			"displayName": "Hook ID",
 			"name": "hook_id",
 			"required": true,
 			"description": "The numeric ID of the integration hook",
@@ -377,7 +377,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -421,7 +421,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -439,7 +439,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Hook Id",
+			"displayName": "Hook ID",
 			"name": "hook_id",
 			"required": true,
 			"description": "The numeric ID of the integration hook",
@@ -457,7 +457,7 @@ export const integrationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

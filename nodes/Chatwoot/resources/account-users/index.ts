@@ -73,7 +73,7 @@ export const accountUsersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -118,7 +118,7 @@ export const accountUsersDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "User Id",
+			"displayName": "User ID",
 			"name": "user_id",
 			"type": "number",
 			"default": 1,
@@ -169,7 +169,7 @@ export const accountUsersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -213,7 +213,7 @@ export const accountUsersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",

@@ -85,7 +85,7 @@ export const cannedResponsesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -179,7 +179,7 @@ export const cannedResponsesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -223,7 +223,7 @@ export const cannedResponsesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "The ID of the canned response to be updated.",
@@ -291,7 +291,7 @@ export const cannedResponsesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -335,7 +335,7 @@ export const cannedResponsesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "The ID of the canned response to be deleted",
@@ -353,7 +353,7 @@ export const cannedResponsesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

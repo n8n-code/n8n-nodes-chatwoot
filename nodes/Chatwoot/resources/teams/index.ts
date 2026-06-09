@@ -145,7 +145,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -189,7 +189,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -282,7 +282,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -326,7 +326,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -445,7 +445,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -489,7 +489,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -533,7 +533,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -551,7 +551,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Team Id",
+			"displayName": "Team ID",
 			"name": "team_id",
 			"required": true,
 			"description": "The ID of the team to be updated",
@@ -569,7 +569,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -639,7 +639,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -709,7 +709,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -779,7 +779,7 @@ export const teamsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

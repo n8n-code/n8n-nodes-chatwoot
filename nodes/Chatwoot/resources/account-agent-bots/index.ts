@@ -97,7 +97,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -191,7 +191,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Outgoing Url",
+			"displayName": "Outgoing URL",
 			"name": "outgoing_url",
 			"type": "string",
 			"default": "https://example.com/webhook",
@@ -241,7 +241,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Avatar Url",
+			"displayName": "Avatar URL",
 			"name": "avatar_url",
 			"type": "string",
 			"default": "https://example.com/avatar.png",
@@ -316,7 +316,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -360,7 +360,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -454,7 +454,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Outgoing Url",
+			"displayName": "Outgoing URL",
 			"name": "outgoing_url",
 			"type": "string",
 			"default": "https://example.com/webhook",
@@ -504,7 +504,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Avatar Url",
+			"displayName": "Avatar URL",
 			"name": "avatar_url",
 			"type": "string",
 			"default": "https://example.com/avatar.png",
@@ -579,7 +579,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -623,7 +623,7 @@ export const accountAgentBotsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

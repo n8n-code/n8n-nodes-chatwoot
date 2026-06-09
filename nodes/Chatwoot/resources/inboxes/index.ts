@@ -157,7 +157,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -175,7 +175,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -219,7 +219,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -562,7 +562,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Portal Id",
+			"displayName": "Portal ID",
 			"name": "portal_id",
 			"type": "number",
 			"default": 1,
@@ -671,7 +671,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -715,7 +715,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -733,7 +733,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the inbox",
@@ -751,7 +751,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -795,7 +795,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -813,7 +813,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the inbox",
@@ -1156,7 +1156,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Portal Id",
+			"displayName": "Portal ID",
 			"name": "portal_id",
 			"type": "number",
 			"default": 1,
@@ -1265,7 +1265,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1309,7 +1309,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -1327,7 +1327,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the inbox",
@@ -1345,7 +1345,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1389,7 +1389,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -1407,7 +1407,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the inbox",
@@ -1451,7 +1451,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1495,7 +1495,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"required": true,
 			"description": "The ID of the Inbox",
@@ -1513,7 +1513,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1558,7 +1558,7 @@ export const inboxesDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "number",
 			"default": 1,
@@ -1609,7 +1609,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1654,7 +1654,7 @@ export const inboxesDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "string",
 			"default": 1,
@@ -1705,7 +1705,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1750,7 +1750,7 @@ export const inboxesDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "string",
 			"default": "",
@@ -1801,7 +1801,7 @@ export const inboxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

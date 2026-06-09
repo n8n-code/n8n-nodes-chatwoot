@@ -33,14 +33,14 @@ import { conversationDescription } from './resources/conversation';
 
 export class Chatwoot implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'chatwoot',
+		displayName: 'Chatwoot',
 		name: 'N8nDevChatwoot',
 		icon: { light: 'file:./chatwoot.png', dark: 'file:./chatwoot.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
 		description: 'Chatwoot customer engagement platform',
-		defaults: { name: 'chatwoot' },
+		defaults: { name: 'Chatwoot' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],

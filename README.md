@@ -53,39 +53,335 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| Accounts | POST Create an Account, GET Get an account details, PATCH Update an account, DELETE Delete an Account |
-| Account Users | GET List all Account Users, POST Create an Account User, DELETE Delete an Account User |
-| Agent Bots | GET List all AgentBots, POST Create an Agent Bot, GET Get an agent bot details, PATCH Update an agent bot, DELETE Delete an AgentBot |
-| Users | POST Create a User, GET Get an user details, PATCH Update a user, DELETE Delete a User, GET Get User SSO Link |
-| Inbox API | GET Inbox details |
-| Contacts | GET List Contacts, POST Create Contact, GET Show Contact, PUT Update Contact, DELETE Delete Contact, GET Contact Conversations, GET Search Contacts, POST Contact Filter, POST Create contact inbox, GET Get Contactable Inboxes, POST Merge Contacts |
-| Contact Labels | GET List Labels, POST Add Labels |
-| Conversation Assignments | POST Assign Conversation |
-| Conversations | GET Get Conversation Counts, GET Conversations List, POST Create New Conversation, POST Conversations Filter, GET Conversation Details, PATCH Update Conversation, POST Toggle Status, POST Toggle Priority, POST Toggle Typing Status, POST Update Custom Attributes, GET List Labels, POST Add Labels, GET Conversation Reporting Events |
-| Custom Filters | GET List all custom filters, POST Create a custom filter, GET Get a custom filter details, PATCH Update a custom filter, DELETE Delete a custom filter |
-| Inboxes | GET List all inboxes, POST Create an inbox, GET Get an inbox, PATCH Update Inbox, GET Show Inbox Agent Bot, POST Add or remove agent bot, GET List Agents in Inbox, POST Add a New Agent, PATCH Update Agents in Inbox, DELETE Remove an Agent from Inbox |
-| Integrations | GET List all the Integrations, POST Create an integration hook, PATCH Update an Integration Hook, DELETE Delete an Integration Hook |
-| Labels | GET List all labels, POST Create a label, GET Get a label, PATCH Update a label, DELETE Delete a label |
-| Messages | GET Get messages, POST Create New Message, DELETE Delete a message |
-| Reports | GET Account Reporting Events, GET Get Account reports, GET Get Account reports summary, GET Account Conversation Metrics, GET Agent Conversation Metrics, GET Get conversation statistics grouped by channel type, GET Get conversation statistics grouped by inbox, GET Get conversation statistics grouped by agent, GET Get conversation statistics grouped by team, GET Get first response time distribution by channel, GET Get inbox-label matrix report, GET Get outgoing messages count grouped by entity |
-| Teams | GET List all teams, POST Create a team, GET Get a team details, PATCH Update a team, DELETE Delete a team, GET List Agents in Team, POST Add a New Agent, PATCH Update Agents in Team, DELETE Remove an Agent from Team |
-| Automation Rule | GET List all automation rules in an account, POST Add a new automation rule, GET Get a automation rule details, PATCH Update automation rule in Account, DELETE Remove a automation rule from account |
-| Help Center | POST Add a new portal, GET List all portals in an account, PATCH Update a portal, POST Add a new category, POST Add a new article |
-| Contacts API | POST Create a contact, GET Get a contact, PATCH Update a contact |
-| Conversations API | POST Create a conversation, GET List all conversations, GET Get a single conversation, POST Resolve a conversation, POST Toggle typing status, POST Update last seen |
-| Messages API | POST Create a message, GET List all messages, PATCH Update a message |
-| CSAT Survey Page | GET Get CSAT survey page |
-| Account | GET Get account details, PATCH Update account |
-| Audit Logs | GET List Audit Logs in Account |
-| Account Agent Bots | GET List all AgentBots, POST Create an Agent Bot, GET Get an agent bot details, PATCH Update an agent bot, DELETE Delete an AgentBot |
-| Agents | GET List Agents in Account, POST Add a New Agent, PATCH Update Agent in Account, DELETE Remove an Agent from Account |
-| Canned Responses | GET List all Canned Responses in an Account, POST Add a New Canned Response, PATCH Update Canned Response in Account, DELETE Remove a Canned Response from Account |
-| Custom Attributes | GET List all custom attributes in an account, POST Add a new custom attribute, GET Get a custom attribute details, PATCH Update custom attribute in Account, DELETE Remove a custom attribute from account |
-| Profile | GET Fetch user profile, PUT Update user profile |
-| Webhooks | GET List all webhooks, POST Add a webhook, PATCH Update a webhook object, DELETE Delete a webhook |
-| Conversation | GET Get messages from a conversation |
+<details>
+<summary><b>Accounts</b> (4 operations)</summary>
+
+- Post Create an Account
+- Get an account details
+- Patch Update an account
+- Delete an Account
+
+</details>
+
+<details>
+<summary><b>Account Users</b> (3 operations)</summary>
+
+- Get List all Account Users
+- Post Create an Account User
+- Delete an Account User
+
+</details>
+
+<details>
+<summary><b>Agent Bots</b> (5 operations)</summary>
+
+- Get List all AgentBots
+- Post Create an Agent Bot
+- Get an agent bot details
+- Patch Update an agent bot
+- Delete an AgentBot
+
+</details>
+
+<details>
+<summary><b>Users</b> (5 operations)</summary>
+
+- Post Create a User
+- Get an user details
+- Patch Update a user
+- Delete a User
+- Get User SSO Link
+
+</details>
+
+<details>
+<summary><b>Inbox API</b> (1 operations)</summary>
+
+- Get Inbox details
+
+</details>
+
+<details>
+<summary><b>Contacts</b> (11 operations)</summary>
+
+- Get List Contacts
+- Post Create Contact
+- Get Show Contact
+- Put Update Contact
+- Delete Contact
+- Get Contact Conversations
+- Get Search Contacts
+- Post Contact Filter
+- Post Create contact inbox
+- Get Contactable Inboxes
+- Post Merge Contacts
+
+</details>
+
+<details>
+<summary><b>Contact Labels</b> (2 operations)</summary>
+
+- Get List Labels
+- Post Add Labels
+
+</details>
+
+<details>
+<summary><b>Conversation Assignments</b> (1 operations)</summary>
+
+- Post Assign Conversation
+
+</details>
+
+<details>
+<summary><b>Conversations</b> (13 operations)</summary>
+
+- Get Conversation Counts
+- Get Conversations List
+- Post Create New Conversation
+- Post Conversations Filter
+- Get Conversation Details
+- Patch Update Conversation
+- Post Toggle Status
+- Post Toggle Priority
+- Post Toggle Typing Status
+- Post Update Custom Attributes
+- Get List Labels
+- Post Add Labels
+- Get Conversation Reporting Events
+
+</details>
+
+<details>
+<summary><b>Custom Filters</b> (5 operations)</summary>
+
+- Get List all custom filters
+- Post Create a custom filter
+- Get a custom filter details
+- Patch Update a custom filter
+- Delete a custom filter
+
+</details>
+
+<details>
+<summary><b>Inboxes</b> (10 operations)</summary>
+
+- Get List all inboxes
+- Post Create an inbox
+- Get an inbox
+- Patch Update Inbox
+- Get Show Inbox Agent Bot
+- Post Add or remove agent bot
+- Get List Agents in Inbox
+- Post Add a New Agent
+- Patch Update Agents in Inbox
+- Delete Remove an Agent from Inbox
+
+</details>
+
+<details>
+<summary><b>Integrations</b> (4 operations)</summary>
+
+- Get List all the Integrations
+- Post Create an integration hook
+- Patch Update an Integration Hook
+- Delete an Integration Hook
+
+</details>
+
+<details>
+<summary><b>Labels</b> (5 operations)</summary>
+
+- Get List all labels
+- Post Create a label
+- Get a label
+- Patch Update a label
+- Delete a label
+
+</details>
+
+<details>
+<summary><b>Messages</b> (3 operations)</summary>
+
+- Get messages
+- Post Create New Message
+- Delete a message
+
+</details>
+
+<details>
+<summary><b>Reports</b> (12 operations)</summary>
+
+- Get Account Reporting Events
+- Get Account reports
+- Get Account reports summary
+- Get Account Conversation Metrics
+- Get Agent Conversation Metrics
+- Get conversation statistics grouped by channel type
+- Get conversation statistics grouped by inbox
+- Get conversation statistics grouped by agent
+- Get conversation statistics grouped by team
+- Get first response time distribution by channel
+- Get inbox label matrix report
+- Get outgoing messages count grouped by entity
+
+</details>
+
+<details>
+<summary><b>Teams</b> (9 operations)</summary>
+
+- Get List all teams
+- Post Create a team
+- Get a team details
+- Patch Update a team
+- Delete a team
+- Get List Agents in Team
+- Post Add a New Agent
+- Patch Update Agents in Team
+- Delete Remove an Agent from Team
+
+</details>
+
+<details>
+<summary><b>Automation Rule</b> (5 operations)</summary>
+
+- Get List all automation rules in an account
+- Post Add a new automation rule
+- Get a automation rule details
+- Patch Update automation rule in Account
+- Delete Remove a automation rule from account
+
+</details>
+
+<details>
+<summary><b>Help Center</b> (5 operations)</summary>
+
+- Post Add a new portal
+- Get List all portals in an account
+- Patch Update a portal
+- Post Add a new category
+- Post Add a new article
+
+</details>
+
+<details>
+<summary><b>Contacts API</b> (3 operations)</summary>
+
+- Post Create a contact
+- Get a contact
+- Patch Update a contact
+
+</details>
+
+<details>
+<summary><b>Conversations API</b> (6 operations)</summary>
+
+- Post Create a conversation
+- Get List all conversations
+- Get a single conversation
+- Post Resolve a conversation
+- Post Toggle typing status
+- Post Update last seen
+
+</details>
+
+<details>
+<summary><b>Messages API</b> (3 operations)</summary>
+
+- Post Create a message
+- Get List all messages
+- Patch Update a message
+
+</details>
+
+<details>
+<summary><b>CSAT Survey Page</b> (1 operations)</summary>
+
+- Get CSAT survey page
+
+</details>
+
+<details>
+<summary><b>Account</b> (2 operations)</summary>
+
+- Get account details
+- Patch Update account
+
+</details>
+
+<details>
+<summary><b>Audit Logs</b> (1 operations)</summary>
+
+- Get List Audit Logs in Account
+
+</details>
+
+<details>
+<summary><b>Account Agent Bots</b> (5 operations)</summary>
+
+- Get List all AgentBots
+- Post Create an Agent Bot
+- Get an agent bot details
+- Patch Update an agent bot
+- Delete an AgentBot
+
+</details>
+
+<details>
+<summary><b>Agents</b> (4 operations)</summary>
+
+- Get List Agents in Account
+- Post Add a New Agent
+- Patch Update Agent in Account
+- Delete Remove an Agent from Account
+
+</details>
+
+<details>
+<summary><b>Canned Responses</b> (4 operations)</summary>
+
+- Get List all Canned Responses in an Account
+- Post Add a New Canned Response
+- Patch Update Canned Response in Account
+- Delete Remove a Canned Response from Account
+
+</details>
+
+<details>
+<summary><b>Custom Attributes</b> (5 operations)</summary>
+
+- Get List all custom attributes in an account
+- Post Add a new custom attribute
+- Get a custom attribute details
+- Patch Update custom attribute in Account
+- Delete Remove a custom attribute from account
+
+</details>
+
+<details>
+<summary><b>Profile</b> (2 operations)</summary>
+
+- Get Fetch user profile
+- Put Update user profile
+
+</details>
+
+<details>
+<summary><b>Webhooks</b> (4 operations)</summary>
+
+- Get List all webhooks
+- Post Add a WEBHOOK
+- Patch Update a WEBHOOK object
+- Delete a WEBHOOK
+
+</details>
+
+<details>
+<summary><b>Conversation</b> (1 operations)</summary>
+
+- Get messages from a conversation
+
+</details>
 
 ---
 

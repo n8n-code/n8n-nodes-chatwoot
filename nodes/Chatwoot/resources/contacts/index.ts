@@ -169,7 +169,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -271,7 +271,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -315,7 +315,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -334,7 +334,7 @@ export const contactsDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "number",
 			"default": 1,
@@ -484,7 +484,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Avatar Url",
+			"displayName": "Avatar URL",
 			"name": "avatar_url",
 			"type": "string",
 			"default": "https://example.com/avatar.png",
@@ -584,7 +584,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -628,7 +628,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -797,7 +797,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Avatar Url",
+			"displayName": "Avatar URL",
 			"name": "avatar_url",
 			"type": "string",
 			"default": "https://example.com/avatar.png",
@@ -897,7 +897,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -941,7 +941,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -985,7 +985,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the contact",
@@ -1003,7 +1003,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1047,7 +1047,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -1174,7 +1174,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1218,7 +1218,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -1284,7 +1284,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1328,7 +1328,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -1346,7 +1346,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the contact",
@@ -1365,7 +1365,7 @@ export const contactsDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "number",
 			"default": 1,
@@ -1390,7 +1390,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Source Id",
+			"displayName": "Source ID",
 			"name": "source_id",
 			"type": "string",
 			"default": "",
@@ -1415,7 +1415,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1459,7 +1459,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -1477,7 +1477,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the contact",
@@ -1495,7 +1495,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1540,7 +1540,7 @@ export const contactsDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Base Contact Id",
+			"displayName": "Base Contact ID",
 			"name": "base_contact_id",
 			"type": "number",
 			"default": 1,
@@ -1566,7 +1566,7 @@ export const contactsDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Mergee Contact Id",
+			"displayName": "Mergee Contact ID",
 			"name": "mergee_contact_id",
 			"type": "number",
 			"default": 2,
@@ -1591,7 +1591,7 @@ export const contactsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

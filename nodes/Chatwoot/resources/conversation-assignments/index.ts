@@ -49,7 +49,7 @@ export const conversationAssignmentsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Assignee Id",
+			"displayName": "Assignee ID",
 			"name": "assignee_id",
 			"type": "number",
 			"default": 1,
@@ -74,7 +74,7 @@ export const conversationAssignmentsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Team Id",
+			"displayName": "Team ID",
 			"name": "team_id",
 			"type": "number",
 			"default": 1,
@@ -99,7 +99,7 @@ export const conversationAssignmentsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -124,7 +124,7 @@ export const conversationAssignmentsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",

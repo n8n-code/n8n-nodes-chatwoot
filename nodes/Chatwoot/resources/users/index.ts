@@ -63,8 +63,8 @@ export const usersDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Get Sso Url Of A User",
-					"value": "Get Sso Url Of A User",
+					"name": "Get Sso URL Of A User",
+					"value": "Get Sso URL Of A User",
 					"action": "Get User SSO Link",
 					"description": "Get the sso link of a user",
 					"routing": {
@@ -222,7 +222,7 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -266,7 +266,7 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -435,7 +435,7 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -479,7 +479,7 @@ export const usersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -517,13 +517,13 @@ export const usersDescription: INodeProperties[] = [
 						"Users"
 					],
 					"operation": [
-						"Get Sso Url Of A User"
+						"Get Sso URL Of A User"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_platformappapikey",
 			"type": "string",
 			"default": "",
@@ -542,7 +542,7 @@ export const usersDescription: INodeProperties[] = [
 						"Users"
 					],
 					"operation": [
-						"Get Sso Url Of A User"
+						"Get Sso URL Of A User"
 					]
 				}
 			}

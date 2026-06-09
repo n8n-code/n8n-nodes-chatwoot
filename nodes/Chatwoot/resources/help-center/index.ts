@@ -322,7 +322,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -366,7 +366,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -384,7 +384,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -428,7 +428,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Account Id",
+			"displayName": "Account ID",
 			"name": "account_id",
 			"required": true,
 			"description": "The numeric ID of the account",
@@ -446,7 +446,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "The slug identifier of the portal",
@@ -689,7 +689,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -883,7 +883,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Parent Category Id",
+			"displayName": "Parent Category ID",
 			"name": "parent_category_id",
 			"type": "number",
 			"default": 1,
@@ -908,7 +908,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Associated Category Id",
+			"displayName": "Associated Category ID",
 			"name": "associated_category_id",
 			"type": "number",
 			"default": 2,
@@ -933,7 +933,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1102,7 +1102,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Category Id",
+			"displayName": "Category ID",
 			"name": "category_id",
 			"type": "number",
 			"default": 1,
@@ -1127,7 +1127,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Author Id",
+			"displayName": "Author ID",
 			"name": "author_id",
 			"type": "number",
 			"default": 1,
@@ -1152,7 +1152,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Associated Article Id",
+			"displayName": "Associated Article ID",
 			"name": "associated_article_id",
 			"type": "number",
 			"default": 2,
@@ -1252,7 +1252,7 @@ export const helpCenterDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

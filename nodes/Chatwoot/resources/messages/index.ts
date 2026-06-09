@@ -123,7 +123,7 @@ export const messagesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -329,7 +329,7 @@ export const messagesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Campaign Id",
+			"displayName": "Campaign ID",
 			"name": "campaign_id",
 			"type": "number",
 			"default": 1,
@@ -379,7 +379,7 @@ export const messagesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -404,7 +404,7 @@ export const messagesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",
@@ -448,7 +448,7 @@ export const messagesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",

@@ -8,7 +8,7 @@ import type {
 export class ChatwootApi implements ICredentialType {
 	name = 'N8nDevChatwootApi';
 
-	displayName = 'chatwoot API';
+	displayName = 'Chatwoot API';
 
 	icon: Icon = { light: 'file:../nodes/Chatwoot/chatwoot.png', dark: 'file:../nodes/Chatwoot/chatwoot.dark.png' };
 
@@ -22,7 +22,7 @@ export class ChatwootApi implements ICredentialType {
 			default: 'https://app.chatwoot.com/',
 			required: true,
 			placeholder: 'https://app.chatwoot.com/',
-			description: 'The base URL of your chatwoot API server',
+			description: 'The base URL of your Chatwoot API server',
 		},
 		{
 			displayName: 'API Key',

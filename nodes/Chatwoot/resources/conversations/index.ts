@@ -265,7 +265,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"default": 0,
 			"type": "number",
@@ -289,7 +289,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Team Id",
+			"displayName": "Team ID",
 			"name": "team_id",
 			"default": 0,
 			"type": "number",
@@ -337,7 +337,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -496,7 +496,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"default": 0,
 			"type": "number",
@@ -520,7 +520,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Team Id",
+			"displayName": "Team ID",
 			"name": "team_id",
 			"default": 0,
 			"type": "number",
@@ -593,7 +593,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -638,7 +638,7 @@ export const conversationsDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Source Id",
+			"displayName": "Source ID",
 			"name": "source_id",
 			"type": "string",
 			"default": "1234567890",
@@ -663,7 +663,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Inbox Id",
+			"displayName": "Inbox ID",
 			"name": "inbox_id",
 			"type": "number",
 			"default": 1,
@@ -688,7 +688,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Contact Id",
+			"displayName": "Contact ID",
 			"name": "contact_id",
 			"type": "number",
 			"default": 1,
@@ -802,7 +802,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Assignee Id",
+			"displayName": "Assignee ID",
 			"name": "assignee_id",
 			"type": "number",
 			"default": 1,
@@ -827,7 +827,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Team Id",
+			"displayName": "Team ID",
 			"name": "team_id",
 			"type": "number",
 			"default": 1,
@@ -902,7 +902,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -927,7 +927,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",
@@ -1019,7 +1019,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1063,7 +1063,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1154,7 +1154,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Sla Policy Id",
+			"displayName": "Sla Policy ID",
 			"name": "sla_policy_id",
 			"type": "number",
 			"default": 1,
@@ -1179,7 +1179,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1204,7 +1204,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",
@@ -1317,7 +1317,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1342,7 +1342,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",
@@ -1434,7 +1434,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1459,7 +1459,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",
@@ -1564,7 +1564,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1589,7 +1589,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_agentbotapikey",
 			"type": "string",
 			"default": "",
@@ -1659,7 +1659,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1703,7 +1703,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1773,7 +1773,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
@@ -1817,7 +1817,7 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Access Token",
+			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
 			"default": "",
