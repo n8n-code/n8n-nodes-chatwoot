@@ -32,32 +32,32 @@ import { webhooksDescription } from './resources/webhooks';
 import { conversationDescription } from './resources/conversation';
 
 export class Chatwoot implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Chatwoot',
-		name: 'N8nDevChatwoot',
-		icon: { light: 'file:./chatwoot.png', dark: 'file:./chatwoot.dark.png' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Chatwoot customer engagement platform',
-		defaults: { name: 'Chatwoot' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevChatwootApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Chatwoot',
+                name: 'N8nDevChatwoot',
+                icon: { light: 'file:./chatwoot.png', dark: 'file:./chatwoot.dark.png' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'Chatwoot customer engagement platform',
+                defaults: { name: 'Chatwoot' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevChatwootApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -253,6 +253,6 @@ export class Chatwoot implements INodeType {
 		...profileDescription,
 		...webhooksDescription,
 		...conversationDescription
-		],
-	};
+                ],
+        };
 }
