@@ -164,8 +164,10 @@ That's it. No configuration files. No code. It just works.
 </details>
 
 <details>
-<summary><b>Inboxes</b> (10 operations)</summary>
+<summary><b>Inboxes</b> (12 operations)</summary>
 
+- Get account branded email layout
+- Patch Update account branded email layout
 - Get List all inboxes
 - Post Create an inbox
 - Get an inbox

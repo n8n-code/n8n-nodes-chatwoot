@@ -15,6 +15,30 @@ export const inboxesDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
+					"name": "Get Account Branded Email Layout",
+					"value": "Get Account Branded Email Layout",
+					"action": "Get account branded email layout",
+					"description": "Get the account-scoped Liquid HTML layout used as the fallback for branded email replies.",
+					"routing": {
+						"request": {
+							"method": "GET",
+							"url": "=/api/v1/accounts/{{$parameter[\"account_id\"]}}/branded_email_layout"
+						}
+					}
+				},
+				{
+					"name": "Update Account Branded Email Layout",
+					"value": "Update Account Branded Email Layout",
+					"action": "Update account branded email layout",
+					"description": "Update or clear the account-scoped Liquid HTML layout used as the fallback for branded email replies.",
+					"routing": {
+						"request": {
+							"method": "PATCH",
+							"url": "=/api/v1/accounts/{{$parameter[\"account_id\"]}}/branded_email_layout"
+						}
+					}
+				},
+				{
 					"name": "List All Inboxes",
 					"value": "List All Inboxes",
 					"action": "List all inboxes",
@@ -136,6 +160,155 @@ export const inboxesDescription: INodeProperties[] = [
 				}
 			],
 			"default": ""
+		},
+		{
+			"displayName": "GET /api/v1/accounts/{account_id}/branded_email_layout",
+			"name": "operation",
+			"type": "notice",
+			"typeOptions": {
+				"theme": "info"
+			},
+			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Get Account Branded Email Layout"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Account ID",
+			"name": "account_id",
+			"required": true,
+			"description": "The numeric ID of the account",
+			"default": 0,
+			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Get Account Branded Email Layout"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "API Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Get Account Branded Email Layout"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "PATCH /api/v1/accounts/{account_id}/branded_email_layout",
+			"name": "operation",
+			"type": "notice",
+			"typeOptions": {
+				"theme": "info"
+			},
+			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Update Account Branded Email Layout"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Account ID",
+			"name": "account_id",
+			"required": true,
+			"description": "The numeric ID of the account",
+			"default": 0,
+			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Update Account Branded Email Layout"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Branded Email Layout",
+			"name": "branded_email_layout",
+			"type": "string",
+			"default": "<html><body>{{ content_for_layout }}</body></html>",
+			"description": "Account-scoped Liquid HTML layout for branded email replies. Blank or null removes the account override.",
+			"routing": {
+				"send": {
+					"property": "branded_email_layout",
+					"propertyInDotNotation": false,
+					"type": "body",
+					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Update Account Branded Email Layout"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "API Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Update Account Branded Email Layout"
+					]
+				}
+			}
 		},
 		{
 			"displayName": "GET /api/v1/accounts/{account_id}/inboxes",
@@ -1224,6 +1397,31 @@ export const inboxesDescription: INodeProperties[] = [
 			"routing": {
 				"send": {
 					"property": "business_name",
+					"propertyInDotNotation": false,
+					"type": "body",
+					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"Update Inbox"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Branded Email Layout",
+			"name": "branded_email_layout",
+			"type": "string",
+			"default": "<html><body>{{ content_for_layout }}</body></html>",
+			"description": "Liquid HTML layout for outbound email replies. Must include `{{ content_for_layout }}`.\n\nAvailable for: `Email`\n",
+			"routing": {
+				"send": {
+					"property": "branded_email_layout",
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
