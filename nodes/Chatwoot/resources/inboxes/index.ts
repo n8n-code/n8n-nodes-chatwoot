@@ -265,7 +265,7 @@ export const inboxesDescription: INodeProperties[] = [
 			"name": "branded_email_layout",
 			"type": "string",
 			"default": "<html><body>{{ content_for_layout }}</body></html>",
-			"description": "Account-scoped Liquid HTML layout for branded email replies. Blank or null removes the account override.",
+			"description": "Account-scoped Liquid HTML layout for branded email replies. Maximum length is 262,144 characters. Blank or null removes the account override.",
 			"routing": {
 				"send": {
 					"property": "branded_email_layout",
@@ -1418,7 +1418,7 @@ export const inboxesDescription: INodeProperties[] = [
 			"name": "branded_email_layout",
 			"type": "string",
 			"default": "<html><body>{{ content_for_layout }}</body></html>",
-			"description": "Liquid HTML layout for outbound email replies. Must include `{{ content_for_layout }}`.\n\nAvailable for: `Email`\n",
+			"description": "Liquid HTML layout for outbound email replies. Must include `{{ content_for_layout }}` and be 262,144 characters or shorter.\n\nAvailable for: `Email`\n",
 			"routing": {
 				"send": {
 					"property": "branded_email_layout",
