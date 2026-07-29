@@ -134,7 +134,7 @@ That's it. No configuration files. No code. It just works.
 </details>
 
 <details>
-<summary><b>Conversations</b> (13 operations)</summary>
+<summary><b>Conversations</b> (14 operations)</summary>
 
 - Get Conversation Counts
 - Get Conversations List
@@ -146,6 +146,7 @@ That's it. No configuration files. No code. It just works.
 - Post Toggle Priority
 - Post Toggle Typing Status
 - Post Update Custom Attributes
+- Post Destroy Custom Attributes
 - Get List Labels
 - Post Add Labels
 - Get Conversation Reporting Events

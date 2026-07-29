@@ -135,6 +135,18 @@ export const conversationsDescription: INodeProperties[] = [
 					}
 				},
 				{
+					"name": "Destroy Custom Attributes Of A Conversation",
+					"value": "Destroy Custom Attributes Of A Conversation",
+					"action": "Destroy Custom Attributes",
+					"description": "Removes the given custom attribute keys from a conversation",
+					"routing": {
+						"request": {
+							"method": "POST",
+							"url": "=/api/v1/accounts/{{$parameter[\"account_id\"]}}/conversations/{{$parameter[\"conversation_id\"]}}/destroy_custom_attributes"
+						}
+					}
+				},
+				{
 					"name": "List All Labels Of A Conversation",
 					"value": "List All Labels Of A Conversation",
 					"action": "List Labels",
@@ -1659,6 +1671,31 @@ export const conversationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Merge",
+			"name": "merge",
+			"type": "boolean",
+			"default": false,
+			"description": "When true, only the keys sent in `custom_attributes` are updated and the remaining keys are kept intact. When false (default), the whole custom attributes hash is replaced. Use the destroy_custom_attributes endpoint to remove keys.",
+			"routing": {
+				"send": {
+					"property": "merge",
+					"propertyInDotNotation": false,
+					"type": "body",
+					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Update Custom Attributes Of A Conversation"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
@@ -1679,6 +1716,76 @@ export const conversationsDescription: INodeProperties[] = [
 					],
 					"operation": [
 						"Update Custom Attributes Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "POST /api/v1/accounts/{account_id}/conversations/{conversation_id}/destroy_custom_attributes",
+			"name": "operation",
+			"type": "notice",
+			"typeOptions": {
+				"theme": "info"
+			},
+			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Destroy Custom Attributes Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"required": true,
+			"displayName": "Custom Attributes",
+			"name": "custom_attributes",
+			"type": "json",
+			"default": "[\n  \"order_id\",\n  \"previous_conversation\"\n]",
+			"description": "The list of custom attribute keys to remove from the conversation",
+			"routing": {
+				"send": {
+					"property": "custom_attributes",
+					"propertyInDotNotation": false,
+					"type": "body",
+					"value": "={{ JSON.parse($value) }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Destroy Custom Attributes Of A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "API Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Conversations"
+					],
+					"operation": [
+						"Destroy Custom Attributes Of A Conversation"
 					]
 				}
 			}
