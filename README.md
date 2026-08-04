@@ -165,7 +165,7 @@ That's it. No configuration files. No code. It just works.
 </details>
 
 <details>
-<summary><b>Inboxes</b> (12 operations)</summary>
+<summary><b>Inboxes</b> (13 operations)</summary>
 
 - Get account branded email layout
 - Patch Update account branded email layout
@@ -173,6 +173,7 @@ That's it. No configuration files. No code. It just works.
 - Post Create an inbox
 - Get an inbox
 - Patch Update Inbox
+- Get List WhatsApp message templates
 - Get Show Inbox Agent Bot
 - Post Add or remove agent bot
 - Get List Agents in Inbox

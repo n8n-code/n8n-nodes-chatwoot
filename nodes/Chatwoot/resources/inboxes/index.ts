@@ -87,6 +87,18 @@ export const inboxesDescription: INodeProperties[] = [
 					}
 				},
 				{
+					"name": "List Whatsapp Message Templates",
+					"value": "List Whatsapp Message Templates",
+					"action": "List WhatsApp message templates",
+					"description": "List the cached message templates available for a WhatsApp inbox",
+					"routing": {
+						"request": {
+							"method": "GET",
+							"url": "=/api/v1/accounts/{{$parameter[\"account_id\"]}}/inboxes/{{$parameter[\"id\"]}}/message_templates"
+						}
+					}
+				},
+				{
 					"name": "Get Inbox Agent Bot",
 					"value": "Get Inbox Agent Bot",
 					"action": "Show Inbox Agent Bot",
@@ -1483,6 +1495,111 @@ export const inboxesDescription: INodeProperties[] = [
 					],
 					"operation": [
 						"Update Inbox"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "GET /api/v1/accounts/{account_id}/inboxes/{id}/message_templates",
+			"name": "operation",
+			"type": "notice",
+			"typeOptions": {
+				"theme": "info"
+			},
+			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"List Whatsapp Message Templates"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Account ID",
+			"name": "account_id",
+			"required": true,
+			"description": "The numeric ID of the account",
+			"default": 0,
+			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"List Whatsapp Message Templates"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "ID",
+			"name": "id",
+			"required": true,
+			"description": "ID of the WhatsApp inbox",
+			"default": 0,
+			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"List Whatsapp Message Templates"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Name",
+			"name": "name",
+			"description": "Exact template name to filter by",
+			"default": "",
+			"type": "string",
+			"routing": {
+				"send": {
+					"type": "query",
+					"property": "name",
+					"value": "={{ $value }}",
+					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"List Whatsapp Message Templates"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "API Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Inboxes"
+					],
+					"operation": [
+						"List Whatsapp Message Templates"
 					]
 				}
 			}
