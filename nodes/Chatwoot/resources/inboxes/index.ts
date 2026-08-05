@@ -90,7 +90,7 @@ export const inboxesDescription: INodeProperties[] = [
 					"name": "List Whatsapp Message Templates",
 					"value": "List Whatsapp Message Templates",
 					"action": "List WhatsApp message templates",
-					"description": "List the cached message templates available for a WhatsApp inbox",
+					"description": "List the cached message templates available for a native or Twilio WhatsApp inbox",
 					"routing": {
 						"request": {
 							"method": "GET",
@@ -1540,7 +1540,7 @@ export const inboxesDescription: INodeProperties[] = [
 			"displayName": "ID",
 			"name": "id",
 			"required": true,
-			"description": "ID of the WhatsApp inbox",
+			"description": "ID of the native or Twilio WhatsApp inbox",
 			"default": 0,
 			"type": "number",
 			"displayOptions": {
