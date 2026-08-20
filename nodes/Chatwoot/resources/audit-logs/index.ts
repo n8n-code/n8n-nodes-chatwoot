@@ -74,6 +74,141 @@ export const auditLogsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Q",
+			"name": "q",
+			"description": "Filter entries by the name or email of the user who performed the action",
+			"default": "",
+			"type": "string",
+			"routing": {
+				"send": {
+					"type": "query",
+					"property": "q",
+					"value": "={{ $value }}",
+					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Audit Logs"
+					],
+					"operation": [
+						"Get Account Audit Logs"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Types",
+			"name": "types",
+			"description": "Filter entries by the type of the audited record",
+			"default": "[\n  \"Inbox\"\n]",
+			"type": "json",
+			"routing": {
+				"send": {
+					"type": "query",
+					"property": "types",
+					"value": "={{ $value }}",
+					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Audit Logs"
+					],
+					"operation": [
+						"Get Account Audit Logs"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Since",
+			"name": "since",
+			"description": "Only return entries created at or after this unix timestamp",
+			"default": 1755388800,
+			"type": "number",
+			"routing": {
+				"send": {
+					"type": "query",
+					"property": "since",
+					"value": "={{ $value }}",
+					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Audit Logs"
+					],
+					"operation": [
+						"Get Account Audit Logs"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Until",
+			"name": "until",
+			"description": "Only return entries created at or before this unix timestamp",
+			"default": 1755993599,
+			"type": "number",
+			"routing": {
+				"send": {
+					"type": "query",
+					"property": "until",
+					"value": "={{ $value }}",
+					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Audit Logs"
+					],
+					"operation": [
+						"Get Account Audit Logs"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Sort",
+			"name": "sort",
+			"description": "Order of the entries by creation time",
+			"default": "desc",
+			"type": "options",
+			"options": [
+				{
+					"name": "Desc",
+					"value": "desc"
+				},
+				{
+					"name": "Asc",
+					"value": "asc"
+				}
+			],
+			"routing": {
+				"send": {
+					"type": "query",
+					"property": "sort",
+					"value": "={{ $value }}",
+					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Audit Logs"
+					],
+					"operation": [
+						"Get Account Audit Logs"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "API Access Token",
 			"name": "security_userapikey",
 			"type": "string",
