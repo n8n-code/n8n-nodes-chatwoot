@@ -77,8 +77,8 @@ export const conversationsApiDescription: INodeProperties[] = [
 				{
 					"name": "Update Last Seen",
 					"value": "Update Last Seen",
-					"action": "Update last seen",
-					"description": "Updates the last seen time of the contact in a conversation",
+					"action": "Update last seen and mark messages read",
+					"description": "Updates the contact's last seen time for the conversation and marks agent messages\nsent before that time as read. Use this to send read receipts from a custom client\nbuilt on the API channel, so agents can see when the contact has read their messages.\n",
 					"routing": {
 						"request": {
 							"method": "POST",

@@ -205,10 +205,11 @@ That's it. No configuration files. No code. It just works.
 </details>
 
 <details>
-<summary><b>Messages</b> (3 operations)</summary>
+<summary><b>Messages</b> (4 operations)</summary>
 
 - Get messages
 - Post Create New Message
+- Patch Update message status
 - Delete a message
 
 </details>
@@ -285,7 +286,7 @@ That's it. No configuration files. No code. It just works.
 - Get a single conversation
 - Post Resolve a conversation
 - Post Toggle typing status
-- Post Update last seen
+- Post Update last seen and mark messages read
 
 </details>
 

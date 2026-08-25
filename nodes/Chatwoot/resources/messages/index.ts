@@ -39,6 +39,18 @@ export const messagesDescription: INodeProperties[] = [
 					}
 				},
 				{
+					"name": "Update Message Status",
+					"value": "Update Message Status",
+					"action": "Update message status",
+					"description": "Updates the delivery status of a single message. Available only for messages in\nAPI channel inboxes, where your own system is responsible for delivering messages\nand reporting what happened. Use this to push `sent`, `delivered`, and `read`\nreceipts into Chatwoot, for example, to mark an agent's message as read when the\nend user views it in your client, so the agent sees the read indicator on the\nmessage.\n\nA message already marked `read` cannot be moved back to `delivered`. When\nreporting a failure, include `external_error` with the reason, which is shown to\nthe agent along with the failed indicator.\n",
+					"routing": {
+						"request": {
+							"method": "PATCH",
+							"url": "=/api/v1/accounts/{{$parameter[\"account_id\"]}}/conversations/{{$parameter[\"conversation_id\"]}}/messages/{{$parameter[\"message_id\"]}}"
+						}
+					}
+				},
+				{
 					"name": "Delete A Message",
 					"value": "Delete A Message",
 					"action": "Delete a message",
@@ -424,6 +436,119 @@ export const messagesDescription: INodeProperties[] = [
 					],
 					"operation": [
 						"Create A New Message In A Conversation"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "PATCH /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages/{message_id}",
+			"name": "operation",
+			"type": "notice",
+			"typeOptions": {
+				"theme": "info"
+			},
+			"default": "",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Messages"
+					],
+					"operation": [
+						"Update Message Status"
+					]
+				}
+			}
+		},
+		{
+			"required": true,
+			"displayName": "Status",
+			"name": "status",
+			"type": "options",
+			"default": "sent",
+			"description": "The new status of the message",
+			"options": [
+				{
+					"name": "Sent",
+					"value": "sent"
+				},
+				{
+					"name": "Delivered",
+					"value": "delivered"
+				},
+				{
+					"name": "Read",
+					"value": "read"
+				},
+				{
+					"name": "Failed",
+					"value": "failed"
+				}
+			],
+			"routing": {
+				"send": {
+					"property": "status",
+					"propertyInDotNotation": false,
+					"type": "body",
+					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Messages"
+					],
+					"operation": [
+						"Update Message Status"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "External Error",
+			"name": "external_error",
+			"type": "string",
+			"default": "",
+			"description": "Error description, stored only when status is failed",
+			"routing": {
+				"send": {
+					"property": "external_error",
+					"propertyInDotNotation": false,
+					"type": "body",
+					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Messages"
+					],
+					"operation": [
+						"Update Message Status"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "API Access Token",
+			"name": "security_userapikey",
+			"type": "string",
+			"default": "",
+			"description": "This token can be obtained by visiting the profile page or via rails console. Provides access to  endpoints based on the user permissions levels. This token can be saved by an external system when user is created via API, to perform activities on behalf of the user.",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"api_access_token": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Messages"
+					],
+					"operation": [
+						"Update Message Status"
 					]
 				}
 			}
